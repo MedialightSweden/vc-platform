@@ -15,6 +15,7 @@ namespace VirtoCommerce.Platform.Data.Notifications
         static LiquidNotificationTemplateResolver()
         {
             Template.RegisterFilter(typeof(VirtoCommerce.Platform.Data.Notifications.LiquidFilters.MathFilters));
+            Template.RegisterFilter(typeof(VirtoCommerce.Platform.Data.Notifications.LiquidFilters.DatumFilter));
         }
 
         private void RegisterTypeAsDrop(Type type)
